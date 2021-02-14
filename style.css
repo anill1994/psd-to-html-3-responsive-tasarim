@@ -1,0 +1,256 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+nav{
+    font-size: 1.6rem;
+    height: 8rem;
+}
+a:hover{
+    color: #50d7d3 !important;
+}
+header{
+    display: flex;
+    background-color: #f6f6f6;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 30rem;
+    padding: 0 40rem;
+    text-align: center;
+}
+header h2{
+    font-size: 3.3rem;
+}
+header p{
+    font-size: 1.8rem;
+    margin-top: 1rem;
+}
+#image-section .bg{
+    height: 30rem;
+    position: relative;
+    background-color: #dddddd;
+    margin: 0;
+    padding: 0;
+}
+#image-section img{
+    height: 30rem;
+    width: 100%;
+}
+#image-section .col-md-3{
+    padding: 0;
+}
+.overlay{
+    position: absolute;
+    bottom: 100%;
+    left: 0; 
+    width: 100%;
+    background-color: #21bfb9;
+    transition: 0.5s all;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.overlay i{
+    color: #fff;
+    display: none;
+}
+#image-section .bg:hover .overlay{
+    display: flex;
+    bottom: 0;
+    height: 100%;
+    opacity: 0.7;
+    cursor: pointer;
+}
+#image-section .bg:hover i{
+    display: block;
+}
+
+/* footer */
+footer{
+    background-color: #141414;
+    color: #bcbcbc;
+    padding: 5rem;
+}
+.footer-link{
+    font-size: 1.5rem;
+    color: #bcbcbc;
+    text-decoration: none !important;
+}
+/* -------------
+
+about */
+#aquabar{
+    background-color: #10c9c3;
+    color: #fff;
+    height: 24rem;
+}
+.aquabar-items{
+    display: flex;
+    height: 24rem;
+    align-items: center;
+    justify-content: center;
+}
+.aquabar-item{
+    margin-right: 2rem;
+}
+.aquabar-item .aquabar-text{
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    padding-top: 0;
+}
+.number{
+    font-size: 1.8rem;
+    padding-top: 1rem;
+    font-weight: 600;
+    line-height: 1rem;
+}
+#about{
+    height: 57rem;
+}
+.about-img{
+    background-color: #e1e1e1;
+    padding: 0;
+}
+.about-text h2{
+    font-size: 3rem;
+    font-weight: 500;
+}
+.about-text p{
+    font-size: 1.6rem;
+    margin-top: 3rem ;
+}
+.signature{
+    margin-top: 3rem;
+}
+.about-text{
+    background: #f5f5f5;
+    padding: 14rem 6.5rem;
+}
+#about-2{
+    height: 40rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 40rem;
+    text-align: center;
+}
+#about-2 h2{
+    font-size: 3rem;
+}
+#about-2 p{
+    font-size: 1.6rem;
+    margin: 5rem 0;
+}
+.button{
+    background-color: #10c9c3;
+    color: #fff;
+    padding: 1.5rem 4.2rem;
+    font-size: 1.6rem;
+    border: none;
+}
+#contact{
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    background-color: #f5f5f5;
+}
+#contact-1{
+    padding: 0 10rem;
+}
+#contact-1 h2{
+    font-size: 3rem;
+    margin-bottom: 4rem;
+
+}
+#contact-1 p{
+    font-size: 1.6rem;
+}
+#contact-1-text2{
+    margin-top: 3rem;
+}
+#contact-2{
+    padding: 0 10rem; 
+}
+input,textarea{
+    margin-bottom: 2.5rem;
+    padding: 2.5rem 1rem !important;
+    font-size: 1.6rem !important;
+}
+#map{
+    margin-top: 10rem;
+    text-align: center;
+}
+
+/* -------------queries-------------- */
+@media only screen and (max-width: 1200px) {
+    html{
+        font-size: 9px;
+    }
+    #about-2{
+        padding: 0 25rem;
+    }
+    header{
+        padding: 0 25rem;
+    }
+  }
+@media only screen and (max-width: 962px) {
+    html{
+        font-size: 9px;
+    }
+    #about-2{
+        padding: 0 15rem;
+    }
+    header{
+        padding: 0 15rem;
+    }
+  }
+@media only screen and (max-width: 768px) {
+    html{
+        font-size: 10px;
+    }
+  nav{
+      height: auto;
+  }
+  #about-2{
+    padding: 0 15rem;
+}
+header{
+    padding: 0 15rem;
+}
+}
+@media only screen and (max-width: 600px) {
+    
+    #about-2{
+        padding: 0 10rem;
+    }
+    header{
+        padding: 0 10rem;
+    }
+    .aquabar-item .aquabar-text{
+        font-size: 0.9rem;
+        padding: 0;
+    }
+    .aquabar-item .number{
+        font-size: 0.9rem;
+        padding: 0;
+    }
+    .aquabar-item i{
+        font-size: 1.8rem;
+        padding-left: 0.8rem;
+    }
+    .number{
+        font-size: 1.2rem;
+        line-height: 1rem;
+    }
+}
